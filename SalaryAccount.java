@@ -12,6 +12,7 @@ class SalaryAccount extends Account{
         if(this.getBalance() - amount>=MIN_BALANCE)
         {
             this.setBalance(this.getBalance()-amount);
+            System.out.println("Successfully withdrawn");
             return true;
         }
         else

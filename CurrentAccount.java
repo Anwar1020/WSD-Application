@@ -1,4 +1,6 @@
 import java.time.LocalDate;
+
+
 class CurrentAccount extends Account{
       
     private static final double LIMIT_BALANCE = -2000.0;
@@ -12,6 +14,7 @@ class CurrentAccount extends Account{
         if(this.getBalance() - amount>=LIMIT_BALANCE)
         {
             this.setBalance(this.getBalance()-amount);
+            System.out.println("Successfully withdrawn");
             return true;
         }
         else
